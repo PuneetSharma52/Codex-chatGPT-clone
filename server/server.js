@@ -45,7 +45,7 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on https://codex-lc6q.onrender.com'))
+app.listen(3000, () => console.log('AI server started on http://localhost:3000'))
 
 
 // import express from 'express';

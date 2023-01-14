@@ -86,7 +86,11 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
+<<<<<<< HEAD
     const response = await fetch('https://codex-lc6q.onrender.com/', {
+=======
+    const response = await fetch('http://localhost:3000/', {
+>>>>>>> eddc26c (commit)
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
