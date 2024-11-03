@@ -6,6 +6,9 @@
   "scripts": {
     "server": "nodemon server"
   },
+  "engines": {
+  "node": ">=18.0.0"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.31.0",
     "@google/generative-ai": "^0.21.0",
