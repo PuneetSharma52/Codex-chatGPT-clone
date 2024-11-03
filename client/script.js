@@ -82,9 +82,13 @@ const handleSubmit = async (e) => {
         if (response.ok) {
             const data = await response.json();
             console.log("Data parsed from response:", data);
-            messageDiv.innerHTML = data.bot;
-            
-          
+            if (data.bot) {
+                typeText(messageDiv, data.bot);
+            }
+            else {
+                messageDiv.innerHTML = "No response from AI";
+            }
+            chatContainer.scrollTop = chatContainer.scrollHeight;
         } else {
             const errMessage = await response.text();
             console.error("Error response received:", errMessage);
